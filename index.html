@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website - Zyrex Ganit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/4879f31f84.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Zyrex </span><br />from Iloilo City</h1>
+        </div>
+      </div>
+    </div>
+    <!-- --------------About------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A junior computer science student. Continuously honing skills in
+              programming, problem-solving, and communication. Eager to
+              establish a career in software development.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Designing and developing Web
+                  Applications
+                </li>
+                <li>
+                  <span>UI/UX</span><br />Designing and Prototyping Web App
+                  interfaces
+                </li>
+                <li>
+                  <span>Programming</span><br />Experienced working with various
+                  programming languages such as Python and C to solve problems
+                  and make solutions
+                </li>
+                <li>
+                  <span>Mobile Development</span><br />Currently learning dart
+                  and flutter framework for developing cross-platform mobile app
+                </li>
+                <!-- <li>
+                  <span>Documentation and Tester</span><br />Created
+                  documentation for a web app and applied unit testing to it.
+                </li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Software Engineering Project</span><br />Developed a
+                  commute web app
+                </li>
+                <li>
+                  <span>Hackathon</span><br />Placed 3rd Runner up in a
+                  hackathon
+                </li>
+                <li>
+                  <span>Web Development Project</span><br />Developed a
+                  restaurant website
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - Present</span><br />University of the Philippines
+                  Visayas - BS Computer Science
+                </li>
+                <li><span>2024</span><br />DICT Online Education</li>
+                <!-- <li><span>TBA</span><br />N.A.</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------services---------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              I'm actively seeking an internship opportunity in front-end
+              development. Excited about the prospect of gaining valuable
+              experience in the field.
+              <!-- <a href="#">Learn more</a> -->
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I'm passionate about crafting intuitive and visually appealing
+              user experiences. Currently, I'm eager to dive into an internship
+              focused on UI/UX design, where I can apply my creativity and
+              problem-solving skills to create engaging digital experiences.
+              <!-- <a href="#">Learn more</a> -->
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-computer"></i>
+            <h2>Programming/IT</h2>
+            <p>
+              I'm enthusiastically seeking an internship opportunity in the
+              field of programming/IT. With a strong foundation in coding and a
+              passion for solving complex technical challenges, I'm eager to
+              contribute to innovative projects and gain hands-on experience in
+              the industry..
+              <!-- <a href="#">Learn more</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------portfolio----------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Magsasakay</h3>
+              <p>
+                A commute web app, created using node.js, React, tailwind, and
+                MongoDB. I am one of the front-end developer and documenter of
+                Magsasakay. We are currently updating this project by optimizing
+                its features implementing testing.
+              </p>
+              <a href="https://drive.google.com/file/d/1h-cM3Hl07yz01NASEpWP0yPv7r5obzO_/view"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Menu-do</h3>
+              <p>
+                This is a restaurant website. We developed it using HTML,
+                CSS, JavaScript, PHP, and MySQL. It is my very first website
+                project.
+              </p>
+              <a href="#portfolio"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>App 3</h3>
+              <p>Short description</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div> -->
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    
+    <!-- ---------------contact----------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p class="personal-info">
+              <i class="fa-solid fa-paper-plane"></i>zyrexdjewelganit@gmail.com
+            </p>
+            <p class="personal-info"><i class="fa-solid fa-square-phone"></i>(+63) 9085349160</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/zyrexdjewel.ganit"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/zyrex_series/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="www.linkedin.com/in/zyrex-djewel-ganit-341455279"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Dowload CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span><div id="msg"></div></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        
+          © 2024 Zyrex Ganit. <br />All rights reserved.  <br /><br />
+          This website was adapted from <br />Complete Responsive Design by
+          GreatStack <br />and Google App Script by jamiewilson. <br />Used with
+          permission. 
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var side = document.getElementById("sidemenu");
+
+      function openMenu() {
+        side.style.right = "0";
+      }
+      function closeMenu() {
+        side.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxG3neXic3pVOI1xnuoWZCJRHxCJjDNInt945-yLo9TTgrXeKi8LSGFpgYuzEYmBzZl/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
